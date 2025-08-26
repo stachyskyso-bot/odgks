@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO description -->
+    <meta name="description" content="Découvrez le parcours académique de ONDONGO KYSO STACHYS : Étudiant en ingénierie à l'EMG, ancien de l'ENSP et titulaire d'un bac D en SVT.">
+
+    <!-- Open Graph (réseaux sociaux) -->
+    <meta property="og:title" content="Formation - Portfolio ONDONGO KYSO STACHYS" />
+    <meta property="og:description" content="Étudiant en ingénierie à l'EMG, ancien de l'ENSP et titulaire d'un bac D en SVT. Découvrez mon parcours académique." />
+    <meta property="og:image" content="Photo/photo.jpg" />
+    <meta property="og:url" content="https://odgks.com/Formation.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Formation - Portfolio ONDONGO KYSO STACHYS" />
+    <meta name="twitter:description" content="Découvrez mon parcours académique : Étudiant en ingénierie à l'EMG, ancien de l'ENSP et titulaire d'un bac D en SVT." />
+    <meta name="twitter:image" content="Photo/photo.jpg" />
+
+    <!-- Titre -->
+    <title>Formation - ONDONGO KYSO STACHYS | Portfolio Ingénierie</title>
+    <link rel="icon" type="image/png" href="Photo/favicon.png">
+    <style>
+        /* Variables de couleurs */
+        
+         :root {
+            --primary: #2E8B57;
+            /* Vert forêt */
+            --secondary: #3CB371;
+            /* Vert moyen */
+            --accent: #7AF2B6;
+            /* Vert pastel */
+            --dark: #0E2A1C;
+            /* Vert foncé */
+            --light: #F1F8F5;
+            /* Vert très clair */
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #e6f0f2;
+            --bg: #071023;
+            /* Fond bleu foncé */
+        }
+        /* Styles généraux */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: var(--bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform: translateX(-100%);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        /* Menu latéral */
+        
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .menu-toggle:hover {
+            transform: rotate(90deg);
+            background: var(--secondary);
+        }
+        
+        .side-menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background: var(--dark);
+            transition: all 0.4s ease;
+            z-index: 999;
+            padding-top: 60px;
+            box-shadow: -2px 0 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .side-menu.active {
+            right: 0;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .close-btn:hover {
+            transform: scale(1.2);
+        }
+        
+        .side-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .side-menu ul li {
+            padding: 15px 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .side-menu ul li:hover {
+            background: rgba(255, 255, 255, 0.1);
+            padding-left: 30px;
+        }
+        
+        .side-menu ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .side-menu ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: all 0.3s ease;
+        }
+        
+        .side-menu ul li a:hover::before {
+            width: 100%;
+        }
+        
+        .side-menu ul li a.active {
+            color: var(--accent);
+        }
+        /* Conteneur principal */
+        
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Section profil */
+        
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, var(--dark) 0%, rgba(14, 42, 28, 0.8) 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: fadeInUp 1s forwards 0.5s;
+            border: 1px solid var(--primary);
+        }
+        
+        .profile-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary);
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease;
+        }
+        
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            border-color: var(--accent);
+        }
+        
+        .profile-section h2 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 28px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .profile-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+            border-radius: 3px;
+        }
+        
+        .profile-section p {
+            color: var(--light);
+            max-width: 700px;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        /* Timeline verticale animée */
+        
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto 50px;
+            padding: 40px 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+        
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            transform: translateX(50px);
+        }
+        
+        .timeline-item:nth-child(even).visible {
+            transform: translateX(0);
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background: linear-gradient(135deg, var(--dark) 0%, rgba(14, 42, 28, 0.8) 100%);
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            border: 1px solid var(--primary);
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent);
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            background: linear-gradient(135deg, var(--dark) 0%, rgba(14, 42, 28, 0.8) 100%);
+            border-right: 1px solid var(--primary);
+            border-top: 1px solid var(--primary);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            background: linear-gradient(135deg, var(--dark) 0%, rgba(14, 42, 28, 0.8) 100%);
+            border-left: 1px solid var(--primary);
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .timeline-date i {
+            margin-right: 10px;
+            color: var(--secondary);
+        }
+        
+        .timeline-content h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .timeline-content p {
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .timeline-marker {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12.5px;
+            background: var(--primary);
+            border: 4px solid var(--dark);
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 4px var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover .timeline-marker {
+            background: var(--accent);
+            box-shadow: 0 0 0 4px var(--accent);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .timeline-item:nth-child(even) .timeline-marker {
+            left: -12.5px;
+        }
+        /* Animations */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Effet de particules */
+        
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .particle {
+            position: absolute;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100vw) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        /* Responsive */
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            .timeline-item:nth-child(odd) .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -10px;
+                right: auto;
+            }
+            .timeline-marker {
+                left: 18px !important;
+                right: auto;
+            }
+            .profile-section {
+                text-align: center;
+                padding: 20px;
+            }
+        }
+        /* Effet de vague décoratif */
+        
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z' fill='%23071023'%3E%3C/path%3E%3C/svg%3E");
+            background-size: 1200px 100px;
+            animation: wave 12s linear infinite;
+            opacity: 0.1;
+        }
+        
+        @keyframes wave {
+            0% {
+                background-position-x: 0;
+            }
+            100% {
+                background-position-x: 1200px;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <h1>Mon Parcours Académique</h1>
+    <div class="wave"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu latéral droit -->
+    <nav class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn"><i class="fas fa-times"></i></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contactezMoi.html">Contact</a></li>
+            <li><a href="Competences.html">Compétences</a></li>
+            <li><a href="Formation.html" class="active">Formation</a></li>
+            <li><a href="Experience.html">Expérience</a></li>
+            <li><a href="Project.html">Projets</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="profile-section">
+            <img src="Photo/Moi.jpg" alt="Photo de ONDONGO KYSO STACHYS" class="profile-pic">
+            <div>
+                <h2>ONDONGO KYSO STACHYS</h2>
+                <p>Étudiant en deuxième année à l'EMG (École Marocaine de Rabat d'Ingénieur). Ancien étudiant de l'ENSP (École Nationale Supérieure Polytechnique) de l'Université Marien NGOUABI. Titulaire d'un bac D en Sciences Humaines (SVT) obtenu en 2021.
+                    Passionné par les sciences et l'ingénierie, je souhaite mettre mes compétences au service de projets innovants.</p>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 - Présent</div>
+                    <h3>École d'Ingénieur - EMG Rabat</h3>
+                    <p>Deux années de prépa à l'École Marocaine de Rabat d'Ingénieur. Formation en ingénierie avec spécialisation en cours d'acquisition.</p>
+                </div>
+                <div class="timeline-marker"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 - 2023</div>
+                    <h3>ENSP - Université Marien NGOUABI</h3>
+                    <p>Deux années à l'École Nationale Supérieure Polytechnique. Concours réussi en 2021.</p>
+                </div>
+                <div class="timeline-marker"></div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021</div>
+                    <h3>Baccalauréat D - SVT</h3>
+                    <p>Obtention du Baccalauréat série D en Sciences Humaines (Sciences de la Vie et de la Terre).</p>
+                </div>
+                <div class="timeline-marker"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gestion du menu mobile
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('side-menu').classList.add('active');
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('side-menu').classList.remove('active');
+        });
+
+        // Animation de la timeline au défilement
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            function checkScroll() {
+                const triggerBottom = window.innerHeight * 0.8;
+
+                timelineItems.forEach(item => {
+                    const itemTop = item.getBoundingClientRect().top;
+
+                    if (itemTop < triggerBottom) {
+                        item.classList.add('visible');
+                    }
+                });
+            }
+
+            // Vérifier la position au chargement et au défilement
+            checkScroll();
+            window.addEventListener('scroll', checkScroll);
+
+            // Animation des vagues
+            const wave = document.querySelector('.wave');
+            let position = 0;
+
+            function animateWave() {
+                position += 1;
+                wave.style.backgroundPositionX = position + 'px';
+                requestAnimationFrame(animateWave);
+            }
+
+            animateWave();
+
+            // Création des particules animées
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+
+                // Propriétés aléatoires
+                const size = Math.random() * 10 + 5;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const delay = Math.random() * 15;
+                const duration = Math.random() * 10 + 15;
+
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}vw`;
+                particle.style.top = `${posY}vh`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+
+                // Choisir une couleur aléatoire parmi la palette
+                const colors = ['var(--primary)', 'var(--secondary)', 'var(--accent)'];
+                particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+
+</html>

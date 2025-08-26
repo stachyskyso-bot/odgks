@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez le parcours d'Ondongo Kyso Stachys : Ingénieur en électromécanique, innovateur en robotique agricole et futur leader technologique.">
+
+    <!-- Open Graph (réseaux sociaux) -->
+    <meta property="og:title" content="Expérience - Portfolio Ondongo Kyso Stachys" />
+    <meta property="og:description" content="Mon parcours : ingénierie, innovation agricole et ambition technologique." />
+    <meta property="og:image" content="Photo/Moi.jpg" />
+    <meta property="og:url" content="https://odgks.com/Experience.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Expérience - Portfolio Ondongo Kyso Stachys" />
+    <meta name="twitter:description" content="Découvrez mon parcours en électromécanique, robotique et innovation agricole." />
+    <meta name="twitter:image" content="Photo/Moi.jpg" />
+
+    <title>Expérience - ONDONGO KYSO STACHYS | Ingénierie & Innovation</title>
+    <link rel="icon" type="image/png" href="Photo/favicon.png">
+
+    <!-- JSON-LD (données structurées SEO) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "KYSO ONDONGO",
+            "jobTitle": "Étudiant en ingénierie électromécanique",
+            "url": "https://odgks.com/",
+            "sameAs": [
+                "https://www.linkedin.com/in/stachys-kyso-77603b338",
+                "mailto:stachyskyso@gmail.com"
+            ]
+        }
+    </script>
+
+    <style>
+        /* Variables de couleurs */
+        
+         :root {
+            --primary: #2E8B57;
+            /* Vert forêt */
+            --secondary: #3CB371;
+            /* Vert moyen */
+            --accent: #7AF2B6;
+            /* Vert pastel */
+            --dark: #0E2A1C;
+            /* Vert foncé */
+            --light: #F1F8F5;
+            /* Vert très clair */
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #e6f0f2;
+            --bg: #071023;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: var(--bg);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        /* Hero */
+        
+        .hero {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-top: 10px;
+            padding: 30px;
+            background: rgba(11, 22, 34, 0.6);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(122, 242, 182, 0.1);
+        }
+        
+        .hero .left {
+            width: 260px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(122, 242, 182, 0.2);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            transition: all 0.5s ease;
+        }
+        
+        .avatar:hover {
+            transform: scale(1.05);
+            border-color: var(--accent);
+        }
+        
+        .meta {
+            margin-top: 12px;
+        }
+        
+        .countries {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .chips {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .chips .chip {
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(122, 242, 182, 0.1);
+            color: var(--accent);
+            font-size: 13px;
+            border: 1px solid rgba(122, 242, 182, 0.2);
+        }
+        /* Right */
+        
+        .right {
+            flex: 1;
+        }
+        
+        .right h1 {
+            font-size: 38px;
+            margin: 0 0 6px;
+            color: var(--accent);
+        }
+        
+        .right h3 {
+            color: var(--accent);
+            margin: 0 0 12px;
+            font-size: 1.5rem;
+        }
+        
+        .right p {
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 680px;
+            font-size: 1.1rem;
+        }
+        /* Section title */
+        
+        .section-title {
+            margin: 60px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            margin: 0;
+            color: var(--accent);
+            display: inline-block;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+        
+        .section-title p {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        /* Adventure Path */
+        
+        .adventure-path {
+            position: relative;
+            padding: 40px 0;
+            margin-bottom: 60px;
+        }
+        
+        .path-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--accent), rgba(122, 242, 182, 0.2));
+            transform: translateX(-50%);
+            border-radius: 4px;
+            z-index: 1;
+        }
+        
+        .path-item {
+            display: flex;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .path-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .path-item.left {
+            flex-direction: row;
+        }
+        
+        .path-item.right {
+            flex-direction: row-reverse;
+        }
+        
+        .path-content {
+            flex: 1;
+            padding: 30px;
+            background: rgba(11, 22, 34, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(122, 242, 182, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .path-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0.7;
+        }
+        
+        .path-year {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 0 30px;
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(46, 139, 87, 0.3);
+            position: relative;
+            z-index: 3;
+        }
+        
+        .path-content h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .path-content p {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /* Media Gallery */
+        
+        .media-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .media-item {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 2px solid rgba(122, 242, 182, 0.1);
+        }
+        
+        .media-item:hover {
+            transform: scale(1.05);
+            border-color: var(--accent);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        
+        .media-item img,
+        .media-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* Skills */
+        
+        .skills {
+            display: flex;
+            gap: 20px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .skill-card {
+            flex: 1;
+            min-width: 280px;
+            background: linear-gradient(135deg, rgba(11, 22, 34, 0.8), rgba(14, 42, 28, 0.8));
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(122, 242, 182, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skill-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0.7;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+            border-color: rgba(122, 242, 182, 0.2);
+        }
+        
+        .skill-card h4 {
+            margin: 0 0 15px;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        
+        .skill-card p {
+            margin: 0;
+            color: var(--text-color);
+            line-height: 1.5;
+        }
+        /* Menu Burger */
+        
+        .burger {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 35px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .burger span {
+            height: 4px;
+            background: var(--accent);
+            border-radius: 4px;
+            transition: 0.4s;
+        }
+        /* Animation Burger en croix */
+        
+        .burger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .burger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .burger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        /* Menu */
+        
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100%;
+            background: rgba(14, 42, 28, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: 0.5s ease;
+            z-index: 1000;
+        }
+        
+        .menu.active {
+            right: 0;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border-left: 3px solid transparent;
+            transition: 0.3s;
+        }
+        
+        .menu a:hover {
+            border-left: 3px solid var(--accent);
+            background: rgba(122, 242, 182, 0.1);
+        }
+        /* Animations */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        /* Responsive */
+        
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .path-item {
+                flex-direction: column !important;
+                align-items: center;
+                text-align: center;
+            }
+            .path-year {
+                margin: 0 0 20px 0;
+            }
+            .path-line {
+                left: 50px;
+                transform: none;
+            }
+            .skills {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .media-item {
+                width: 140px;
+                height: 140px;
+            }
+            .path-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HERO -->
+        <section class="hero animate">
+            <div class="left">
+                <img class="avatar" src="Photo/Chemise.jpg" alt="Ondongo Kyso Stachys">
+                <div class="meta">
+                    <p class="countries">Congo→ Maroc</p>
+                    <div class="chips">
+                        <div class="chip">Français</div>
+                        <div class="chip">Anglais</div>
+                        <div class="chip">Arabe (en apprentissage)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h1>ONDONGO KYSO STACHYS</h1>
+                <h3>Qui suis-je ?</h3>
+                <p>Je suis Ondongo Kyso Stachys, étudiant en ingénierie électromécanique, passionné par l'innovation technologique et les solutions agricoles high-tech. Mon ambition: transformer l'agriculture grâce à la robotique et devenir un leader dans
+                    l'innovation mondiale.</p>
+            </div>
+        </section>
+
+        <!-- TIMELINE -->
+        <section class="section-title animate">
+            <h2>Mon Parcours & Vision🚀</h2>
+            <p>De l'ingénierie électromécanique à l'innovation agricole</p>
+        </section>
+
+        <section class="adventure-path">
+            <div class="path-line"></div>
+
+            <div class="path-item left">
+                <div class="path-year">2025</div>
+                <div class="path-content">
+                    <h3><a href="https://rutvie.fr" target="_blank" rel="noopener noreferrer">Portfolio</a></h3>
+                    <p>rutvie.fr est un portfolio en ligne présentant des projets, des compétences et des réalisations dans les domaines de l'ingénierie, du développement et de l'innovation.</p>
+                    <div class="media-gallery">
+                        <div class="media-item">
+                            <img src="Photo/rutvie.png" alt="Prototype agricole" loading="lazy">
+                        </div>
+                        <div class="media-item">
+                            <img src="Photo/Compétences.png" alt="Prototype agricole" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="path-item right">
+                <div class="path-year">2024</div>
+                <div class="path-content">
+                    <h3>École Mohammadia d'Ingénieurs (EMI)</h3>
+                    <p>Études en électromécanique et automatisme. Développement de projets interdisciplinaires en robotique et informatique industrielle.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section class="skills">
+            <div class="skill-card animate">
+                <h4>Électromécanique & Robotique</h4>
+                <p>Conception de machines intelligentes, intégration mécanique et électronique pour l'agriculture et l'industrie.</p>
+            </div>
+
+            <div class="skill-card animate" style="animation-delay: 0.2s">
+                <h4>Programmation</h4>
+                <p>Java, HTML, CSS, JavaScript. Développement d'applications orientées objet et projets web dynamiques.</p>
+            </div>
+
+            <div class="skill-card animate" style="animation-delay: 0.4s">
+                <h4>Vision & Leadership</h4>
+                <p>Esprit stratégique, ambition de bâtir une entreprise innovante et de guider une équipe comme un capitaine avec son équipage.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- BURGER MENU -->
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="menu" id="menu">
+        <a href="index.html">🏠 Home</a>
+        <a href="ContactezMoi.html">📩 Contact</a>
+        <a href="Competences.html">💡 Compétences</a>
+        <a href="Formation.html">🎓 Formation</a>
+        <a href="Experience.html">💼 Expérience</a>
+        <a href="Project.html">📂 Projets</a>
+    </nav>
+
+    <script>
+        // Menu burger
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        // Animation des éléments
+        document.addEventListener('DOMContentLoaded', function() {
+            const pathItems = document.querySelectorAll('.path-item');
+
+            function checkVisibility() {
+                pathItems.forEach(item => {
+                    const position = item.getBoundingClientRect();
+                    if (position.top < window.innerHeight - 100) {
+                        item.classList.add('visible');
+                    }
+                });
+            }
+            checkVisibility();
+            window.addEventListener('scroll', checkVisibility);
+        });
+    </script>
+</body>
+
+</html>

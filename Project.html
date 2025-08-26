@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les projets de Jöel Niamake en philosophie de l'environnement : soutenances, conférences, recherches et publications.">
+
+    <!-- Open Graph (réseaux sociaux) -->
+    <meta property="og:title" content="Projets - Portfolio Jöel Niamake" />
+    <meta property="og:description" content="Mes projets en philosophie de l'environnement : soutenances, conférences, recherches et publications." />
+    <meta property="og:image" content="Photo/Moi.jpg" />
+    <meta property="og:url" content="https://odgks.com/Project.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projets - Portfolio Jöel Niamake" />
+    <meta name="twitter:description" content="Découvrez mes projets en philosophie de l'environnement." />
+    <meta name="twitter:image" content="Photo/Moi.jpg" />
+
+    <title>Projets - ONDONGO KYSO STACHYS | Ingénieur en Electromécanique</title>
+    <link rel="icon" type="image/png" href="Photo/favicon.png">
+
+    <style>
+         :root {
+            --primary: #2E8B57;
+            /* Vert forêt */
+            --secondary: #3CB371;
+            /* Vert moyen */
+            --accent: #7AF2B6;
+            /* Vert pastel */
+            --dark: #0E2A1C;
+            /* Vert foncé */
+            --light: #F1F8F5;
+            /* Vert très clair */
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-color: #e6f0f2;
+            --bg: #071023;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: var(--bg);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        /* Hero */
+        
+        .hero {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-top: 10px;
+            padding: 30px;
+            background: rgba(11, 22, 34, 0.6);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(122, 242, 182, 0.1);
+        }
+        
+        .hero .left {
+            width: 260px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(122, 242, 182, 0.2);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            transition: all 0.5s ease;
+        }
+        
+        .avatar:hover {
+            transform: scale(1.05);
+            border-color: var(--accent);
+        }
+        
+        .meta {
+            margin-top: 12px;
+        }
+        
+        .countries {
+            color: var(--accent);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .chips {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .chips .chip {
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(122, 242, 182, 0.1);
+            color: var(--accent);
+            font-size: 13px;
+            border: 1px solid rgba(122, 242, 182, 0.2);
+        }
+        /* Right */
+        
+        .right {
+            flex: 1;
+        }
+        
+        .right h1 {
+            font-size: 38px;
+            margin: 0 0 6px;
+            color: var(--accent);
+        }
+        
+        .right h3 {
+            color: var(--accent);
+            margin: 0 0 12px;
+            font-size: 1.5rem;
+        }
+        
+        .right p {
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 680px;
+            font-size: 1.1rem;
+        }
+        /* Section title */
+        
+        .section-title {
+            margin: 60px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            margin: 0;
+            color: var(--accent);
+            display: inline-block;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+        
+        .section-title p {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        /* Projects Grid */
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .project-card {
+            background: rgba(11, 22, 34, 0.8);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(122, 242, 182, 0.1);
+            transition: all 0.4s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .project-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            border-color: rgba(122, 242, 182, 0.3);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+        
+        .project-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(14, 42, 28, 0.9);
+            color: var(--accent);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .project-content {
+            padding: 25px;
+        }
+        
+        .project-title {
+            color: var(--accent);
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+        
+        .project-date {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .project-description {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .project-tag {
+            background: rgba(122, 242, 182, 0.1);
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(122, 242, 182, 0.2);
+        }
+        
+        .project-link {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 2px;
+        }
+        
+        .project-link::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .project-link:hover::after {
+            width: 100%;
+        }
+        /* Featured Project */
+        
+        .featured-project {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin-bottom: 40px;
+        }
+        
+        .featured-image {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .featured-content {
+            padding: 40px;
+            background: rgba(11, 22, 34, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .featured-badge {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 15px;
+            align-self: flex-start;
+        }
+        /* Menu Burger */
+        
+        .burger {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 35px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .burger span {
+            height: 4px;
+            background: var(--accent);
+            border-radius: 4px;
+            transition: 0.4s;
+        }
+        /* Animation Burger en croix */
+        
+        .burger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .burger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .burger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        /* Menu */
+        
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100%;
+            background: rgba(14, 42, 28, 0.95);
+            backdrop-filter: blur(10px);
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: 0.5s ease;
+            z-index: 1000;
+        }
+        
+        .menu.active {
+            right: 0;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border-left: 3px solid transparent;
+            transition: 0.3s;
+        }
+        
+        .menu a:hover {
+            border-left: 3px solid var(--accent);
+            background: rgba(122, 242, 182, 0.1);
+        }
+        /* Animations */
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        /* Responsive */
+        
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .featured-project {
+                grid-template-columns: 1fr;
+            }
+            .featured-image {
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .project-content {
+                padding: 20px;
+            }
+            .featured-content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="hero animate">
+            <div class="left">
+                <img class="avatar" src="Photo/Chemise.jpg" alt="Jöel Niamake">
+                <div class="meta">
+                    <p class="countries">Congo, Maroc</p>
+                    <div class="chips">
+                        <div class="chip">Français</div>
+                        <div class="chip">Anglais</div>
+                        <div class="chip">Lingala</div>
+                        <div class="chip">Italien</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="right">
+                <h1>ONDONGO KYSO STACHYS</h1>
+                <h3>Projets Dans le domaine de la tech</h3>
+                <p>Découvrez mes réalisations dans le domaine de la tech : soutenances académiques, conférences, Conceptions et publications de site web etc…</p>
+            </div>
+        </section>
+
+        <section class="section-title animate">
+            <h2>Mes Projets & Réalisations</h2>
+            <p>Des idées à l'action concrète pour une philosophie engagée</p>
+        </section>
+
+        <div class="projects-grid">
+            <!-- Projet vedette -->
+            <div class="featured-project project-card">
+                <div class="featured-image">
+                    <img src="Photo/Soutenance.jpg" alt="Soutenance de thèse" loading="lazy">
+
+                </div>
+                <div class="featured-content">
+                    <span class="featured-badge">Projet Vedette</span>
+                    <h3 class="project-title">Soutenance de Master: "L'Éthique Environnementale à l'Ère de l'Anthropocène"</h3>
+                    <span class="project-date">Juin 2023</span>
+                    <p class="project-description">Travail de recherche approfondi explorant les fondements philosophiques de l'éthique environnementale contemporaine. Analyse critique des récits de l'Anthropocène et proposition de nouveaux cadres éthiques pour repenser les relations
+                        humains-nature.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Philosophie</span>
+                        <span class="project-tag">Éthique</span>
+                        <span class="project-tag">Recherche</span>
+                        <span class="project-tag">Académique</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le résumé</a>
+                </div>
+            </div>
+
+            <!-- Autres projets -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Photo/Conference.jpg" alt="Cycle de conférences" loading="lazy">
+                    <span class="project-category">Conférence</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cycle de Conférences: "Penser l'Écologie"</h3>
+                    <span class="project-date">2025 - Présent</span>
+                    <p class="project-description">Série de conférences mensuelles abordant les enjeux philosophiques de la crise écologique. Interventions publiques suivies de débats avec divers acteurs de la société civile.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Conférence</span>
+                        <span class="project-tag">Débat</span>
+                        <span class="project-tag">Public</span>
+                    </div>
+                    <a href="#" class="project-link">Voir le programme</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Photo/Ateliers.jpg" alt="Ateliers philosophiques" loading="lazy">
+                    <span class="project-category">Atelier</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Ateliers de Philosophie en Forêt</h3>
+                    <span class="project-date">Printemps 2023</span>
+                    <p class="project-description">Ateliers expérientiels alliant marche en forêt et dialogue philosophique sur notre relation à la nature. Une approche innovante pour reconnecter pensée et expérience sensible du vivant.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Atelier</span>
+                        <span class="project-tag">Nature</span>
+                        <span class="project-tag">Expérientiel</span>
+                    </div>
+                    <a href="#" class="project-link">Voir les témoignages</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Photo/Publication.jpg" alt="Publication académique" loading="lazy">
+                    <span class="project-category">Publication</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Article: "Le Care comme Éthique Environnementale"</h3>
+                    <span class="project-date">Décembre 2022</span>
+                    <p class="project-description">Publication dans la Revue de Philosophie Environnementale explorant comment l'éthique du care peut renouveler notre approche des questions écologiques et des relations interspécifiques.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Publication</span>
+                        <span class="project-tag">Recherche</span>
+                        <span class="project-tag">Éthique</span>
+                    </div>
+                    <a href="#" class="project-link">Lire l'article</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Photo/Seminaire.jpg" alt="Séminaire universitaire" loading="lazy">
+                    <span class="project-category">Séminaire</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Séminaire: "Philosophie et Crisis Écologique"</h3>
+                    <span class="project-date">Automne 2022</span>
+                    <p class="project-description">Séminaire de recherche interdisciplinaire réunissant philosophes, écologues et sociologues pour penser les dimensions philosophiques de la crise écologique contemporaine.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Séminaire</span>
+                        <span class="project-tag">Recherche</span>
+                        <span class="project-tag">Interdisciplinaire</span>
+                    </div>
+                    <a href="#" class="project-link">Voir les actes</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Photo/Education.jpg" alt="Programme éducatif" loading="lazy">
+                    <span class="project-category">Éducation</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Programme: "Philosopher avec la Nature"</h3>
+                    <span class="project-date">2022 - Présent</span>
+                    <p class="project-description">Programme éducatif développé pour les lycées visant à initier les jeunes aux questions de philosophie environnementale par des approches pratiques et réflexives.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Éducation</span>
+                        <span class="project-tag">Pédagogie</span>
+                        <span class="project-tag">Jeunesse</span>
+                    </div>
+                    <a href="#" class="project-link">Découvrir le programme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu -->
+    <nav class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="ContactezMoi.html">📩 Contact</a>
+        <a href="Competences.html">💡 Compétences</a>
+        <a href="Formation.html">🎓 Formation</a>
+        <a href="Experience.html">💼 Expérience</a>
+        <a href="Project.html">📂 Projets</a>
+    </nav>
+
+    <script>
+        // Menu burger
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        // Animation des éléments au défilement
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card');
+
+            function checkVisibility() {
+                projectCards.forEach(card => {
+                    const position = card.getBoundingClientRect();
+
+                    // Si l'élément est visible dans la fenêtre
+                    if (position.top < window.innerHeight - 100) {
+                        card.classList.add('visible');
+                    }
+                });
+            }
+
+            // Vérifier au chargement et au défilement
+            checkVisibility();
+            window.addEventListener('scroll', checkVisibility);
+        });
+    </script>
+</body>
+
+
+</html>

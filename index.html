@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez le portfolio de Ruth Ngouolali, coordinatrice logistique et supply chain. Expériences, projets, compétences et parcours académique." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Portfolio Ruth Ngouolali" />
+    <meta property="og:description" content="Coordinatrice Logistique & Supply Chain - Mes projets et expériences" />
+    <meta property="og:image" content="https://odgks.com/Photo/Moi.jpg" />
+    <meta property="og:url" content="https://odgks.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="theme-color" content="#7AF2B6" />
+    <meta rel="canonical" hrel="https://odgks.com/" />
+    <meta property="og:linkedin" content="https://www.linkedin.com/in/stachys-kyso-77603b338/" />
+    <title>Citations Philosophiques - Environnement</title>
+    <link rel="icon" type="image/png" href="Photo/favicon.png">
+    <style>
+         :root {
+            --bg: #071023;
+            --card: #0b1622;
+            --accent: #7AF2B6;
+            --muted: #9aa7b2;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        
+        body {
+            font-family: Inter, system-ui, Arial;
+            background: radial-gradient(circle at 10% 10%, rgba(122, 242, 182, 0.02), transparent 40%), linear-gradient(180deg, #071023 0%, #061425 100%);
+            color: #e6f0f2;
+            min-height: 100vh;
+        }
+        
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 28px
+        }
+        
+        .brand h1 {
+            font-size: 1.5rem;
+            margin-bottom: 4px
+        }
+        
+        .brand .subtitle {
+            color: var(--muted);
+            font-size: 1rem
+        }
+        
+        .meta {
+            display: flex;
+            gap: 12px;
+            align-items: center
+        }
+        
+        .meta .location {
+            color: var(--muted);
+            font-size: 0.9rem
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 12px
+        }
+        
+        .hero {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            padding: 12px;
+            border-radius: 12px;
+            flex-direction: column;
+        }
+        
+        .avatar-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .avatar {
+            width: 250px;
+            height: 350px;
+            border-radius: 50%;
+            border: 3px solid #000;
+        }
+        
+        .music-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #7AF2B6;
+            /* Vert */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+        }
+        /* Icône musique */
+        
+        .music-icon {
+            font-size: 24px;
+            color: white;
+        }
+        /* Égaliseur */
+        
+        .equalizer {
+            display: flex;
+            align-items: flex-end;
+            gap: 3px;
+            height: 20px;
+        }
+        
+        .equalizer span {
+            display: block;
+            width: 3px;
+            background-color: #9aa7b2;
+            animation: bounce 0.5s infinite ease-in-out;
+            animation-play-state: paused;
+            /* arrêt par défaut */
+        }
+        
+        .equalizer span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .equalizer span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        
+        .equalizer span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        
+        .intro h2 {
+            color: var(--accent);
+            margin-bottom: 8px
+        }
+        
+        .intro p {
+            color: var(--muted);
+            max-width: 720px;
+            line-height: 1.5
+        }
+        
+        .content-row {
+            display: flex;
+            gap: 18px;
+            margin-top: 18px
+        }
+        
+        .left-col {
+            flex: 0 0 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px
+        }
+        
+        .right-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px
+        }
+        
+        .card {
+            cursor: pointer;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            transition: background-color 0.3s ease;
+        }
+        
+        .card:hover:not(#green) {
+            background-color: #7AF2B6;
+        }
+        
+        #green {
+            background-color: #7AF2B6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+        }
+        /* Style pour la section des citations */
+        
+        .philosophy-section {
+            margin: 40px 0;
+            padding: 0 12px;
+        }
+        
+        .quote-card {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .quote-card::before {
+            content: """;
+ position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 80px;
+            color: var(--accent);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .philosophy-quote {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #e6f0f2;
+            font-size: 1.3rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-author {
+            display: block;
+            font-style: normal;
+            color: var(--muted);
+            font-weight: 500;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+        /* Animation pour le changement de citation */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+        /* Media queries pour le responsive */
+        
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                align-items: center;
+                text-align: left;
+            }
+            .intro {
+                text-align: left;
+                margin-left: 20px;
+            }
+            .content-row {
+                justify-content: space-between;
+            }
+        }
+        
+        @media (max-width: 880px) {
+            .left-col {
+                flex: 1;
+                order: 2
+            }
+            .right-col {
+                order: 1
+            }
+        }
+        /* Égaliseur */
+        
+        .equalizer {
+            display: flex;
+            align-items: flex-end;
+            gap: 3px;
+            height: 20px;
+        }
+        
+        .equalizer span {
+            display: block;
+            width: 3px;
+            background-color: #9aa7b2;
+            animation: bounce 0.5s infinite ease-in-out;
+            animation-play-state: paused;
+            /* arrêt par défaut */
+        }
+        
+        .equalizer span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .equalizer span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        
+        .equalizer span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        
+        @keyframes bounce {
+            0% {
+                height: 10px;
+            }
+            100% {
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <h1>ONDONGO KYSO STACHYS</h1>
+            <p class="subtitle">Ingénieur en Electromécanique</p>
+        </div>
+        <nav class="meta">
+            <div class="location">Congo</div>
+            <div class="lang"><button id="fr" class="active">FR</button></div>
+        </nav>
+    </header>
+
+    <!-- Bulle musique -->
+    <div class="music-bubble" id="music-bubble">
+        <div class="music-icon" id="music-icon">🎵</div>
+        <div class="equalizer" id="equalizer" style="display:none;">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    <audio id="bg-music" loop>
+    <source src="Musique/Ost.mp4" type="audio/mpeg">
+  </audio>
+
+
+    <main class="container">
+        <section class="hero">
+            <div class="card">
+                <h3>ONDONGO</h3>
+                <ul id="education"></ul>
+                <div class="avatar-container">
+                    <img src="Photo/Moi.jpg" alt="Mon Avatar" class="avatar">
+                </div>
+            </div>
+
+            <div class="intro">
+                <h2 id="role">Ingénieur</h2>
+                <p id="tagline"></p>
+            </div>
+        </section>
+
+        <!-- Section des citations philosophiques aléatoires -->
+        <section class="philosophy-section">
+            <div class="quote-card">
+                <p id="philosophy-quote" class="philosophy-quote fade-in"></p>
+                <span id="quote-author" class="quote-author"></span>
+            </div>
+        </section>
+
+        <section class="content-row">
+            <aside class="left-col">
+                <a href="Competences.html" class="card">
+                    <h3>Compétences</h3>
+                    <div id="skills-list" class="skills-list"></div>
+                </a>
+                <a href="ContactezMoi.html" class="card">
+                    <h3>Contact</h3>
+                </a>
+            </aside>
+
+            <section class="right-col">
+                <a href="Experience.html" class="card">
+                    <h3>Expériences</h3>
+                    <div id="experiences"></div>
+                </a>
+                <a class="card" href="Formation.html">
+                    <h3>Formation</h3>
+                    <ul id="education-list"></ul>
+                </a>
+                <!--
+                <a href="Project.html" class="card">
+                    <h3>Projets & Réalisations</h3>
+                    <div id="projects"></div>
+                </a>
+            </section>
+
+            <a class="card" href="cv/CV Assistante Supply Chain.pdf" id="green">
+                <h3>Recrutez Moi</h3>
+            </a>
+        </section>
+        -->
+    </main>
+
+    <script>
+        const bubble = document.getElementById("music-bubble");
+        const icon = document.getElementById("music-icon");
+        const equalizer = document.getElementById("equalizer");
+        const audio = document.getElementById("bg-music");
+
+        let isPlaying = false;
+
+        bubble.addEventListener("click", () => {
+            if (!isPlaying) {
+                audio.play();
+                icon.style.display = "none";
+                equalizer.style.display = "flex";
+                equalizer.querySelectorAll("span").forEach(bar => {
+                    bar.style.animationPlayState = "running";
+                });
+                isPlaying = true;
+            } else {
+                audio.pause();
+                icon.style.display = "block";
+                equalizer.style.display = "none";
+                equalizer.querySelectorAll("span").forEach(bar => {
+                    bar.style.animationPlayState = "paused";
+                });
+                isPlaying = false;
+            }
+
+        });
+
+        // Citations philosophiques sur l'environnement
+        const quotes = [{
+                text: "Nous n'héritons pas de la terre de nos ancêtres, nous l'empruntons à nos enfants.",
+                author: "Antoine de Saint-Exupéry"
+            }, {
+                text: "La Terre fournit assez pour les besoins de chacun, mais pas pour la cupidité de tous.",
+                author: "Mahatma Gandhi"
+            }, {
+                text: "Dans chaque promenade avec la nature, on reçoit bien plus que ce que l'on cherche.",
+                author: "John Muir"
+            }, {
+                text: "Le premier jardin est celui que cultive en soi le jardinier, avant de le cultiver dans la terre.",
+                author: "Pierre Rabhi"
+            }, {
+                text: "La nature ne fait rien en vain.",
+                author: "Aristote"
+            }, {
+                text: "Le monde a suffisamment pour satisfaire les besoins de chacun, mais pas assez pour satisfaire la cupidité de tous.",
+                author: "Gandhi"
+            }, {
+                text: "La terre n'appartient pas à l'homme, c'est l'homme qui appartient à la terre.",
+                author: "Chef Seattle"
+            }, {
+                text: "Prendre soin de la planète, c'est prendre soin de l'humanité.",
+                author: "Hubert Reeves"
+            }, {
+                text: "L'environnement, c'est notre patrimoine commun, le garant de notre avenir.",
+                author: "Nicolas Hulot"
+            }, {
+                text: "La protection de l'environnement doit primer sur les intérêts économiques.",
+                author: "Albert Einstein"
+            }, {
+                text: "On ne commande la nature qu'en lui obéissant.",
+                author: "Francis Bacon"
+            }, {
+                text: "Le respect de l'environnement est la première étape vers le respect de soi.",
+                author: "Philippe Saint-Marc"
+            }, {
+                text: "L’écologie, c’est l’art de vivre en harmonie avec la Terre.",
+                author: "Pierre Rabhi"
+            }, {
+                text: "Si tu veux comprendre le monde, contemple-le sans vouloir le posséder.",
+                author: "Lao Tseu"
+            }, {
+                text: "Protéger l’environnement, ce n’est pas un luxe, c’est une nécessité vitale.",
+                author: "Wangari Maathai"
+            }, {
+                text: "Celui qui plante des arbres aime les autres en plus de lui-même.",
+                author: "Thomas Fuller"
+            }
+
+        ];
+
+        // Fonction pour obtenir une citation aléatoire
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        // Fonction pour afficher une citation
+        function displayQuote() {
+            const quoteElement = document.getElementById('philosophy-quote');
+            const authorElement = document.getElementById('quote-author');
+
+            // Retirer l'animation
+            quoteElement.classList.remove('fade-in');
+            authorElement.classList.remove('fade-in');
+
+            // Obtenir une nouvelle citation
+            const quote = getRandomQuote();
+
+            // Réappliquer l'animation après un léger délai
+            setTimeout(() => {
+                quoteElement.textContent = quote.text;
+                authorElement.textContent = "— " + quote.author;
+
+                quoteElement.classList.add('fade-in');
+                authorElement.classList.add('fade-in');
+            }, 100);
+        }
+
+        // Afficher une citation au chargement de la page
+        document.addEventListener('DOMContentLoaded', displayQuote);
+    </script>
+</body>
+
+</html>
