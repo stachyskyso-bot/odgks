@@ -443,58 +443,88 @@
         });
 
         // Citations philosophiques sur l'environnement
-        const quotes = [{
-                text: "Nous n'héritons pas de la terre de nos ancêtres, nous l'empruntons à nos enfants.",
-                author: "Antoine de Saint-Exupéry"
-            }, {
-                text: "La Terre fournit assez pour les besoins de chacun, mais pas pour la cupidité de tous.",
-                author: "Mahatma Gandhi"
-            }, {
-                text: "Dans chaque promenade avec la nature, on reçoit bien plus que ce que l'on cherche.",
-                author: "John Muir"
-            }, {
-                text: "Le premier jardin est celui que cultive en soi le jardinier, avant de le cultiver dans la terre.",
-                author: "Pierre Rabhi"
-            }, {
-                text: "La nature ne fait rien en vain.",
-                author: "Aristote"
-            }, {
-                text: "Le monde a suffisamment pour satisfaire les besoins de chacun, mais pas assez pour satisfaire la cupidité de tous.",
-                author: "Gandhi"
-            }, {
-                text: "La terre n'appartient pas à l'homme, c'est l'homme qui appartient à la terre.",
-                author: "Chef Seattle"
-            }, {
-                text: "Prendre soin de la planète, c'est prendre soin de l'humanité.",
-                author: "Hubert Reeves"
-            }, {
-                text: "L'environnement, c'est notre patrimoine commun, le garant de notre avenir.",
-                author: "Nicolas Hulot"
-            }, {
-                text: "La protection de l'environnement doit primer sur les intérêts économiques.",
+         const quotes = [
+            {
+                text: "Parfois, il faut savoir courir avant de savoir marcher.",
+                author: "Tony Stark (Iron Man)"
+            }, 
+            {
+                text: "La meilleure façon de prédire l'avenir, c'est de le créer.",
+                author: "Peter Drucker"
+            }, 
+            {
+                text: "L'innovation distingue un leader d'un suiveur.",
+                author: "Steve Jobs"
+            }, 
+            {
+                text: "La technologie est un outil qui, utilisé à bon escient, peut changer le monde.",
+                author: "Elon Musk"
+            }, 
+            {
+                text: "La première règle de toute technologie utilisée dans les affaires est que l'automatisation appliquée à une opération efficace amplifiera l'efficacité.",
+                author: "Bill Gates"
+            }, 
+            {
+                text: "Notre plus grande faiblesse est d'abandonner. La voie du succès est d'essayer une fois de plus.",
+                author: "Thomas Edison"
+            }, 
+            {
+                text: "La seule façon de faire du bon travail est d'aimer ce que vous faites.",
+                author: "Steve Jobs"
+            }, 
+            {
+                text: "Les gens qui sont assez fous pour penser qu'ils peuvent changer le monde sont ceux qui le font.",
+                author: "Rob Siltanen"
+            }, 
+            {
+                text: "L'intelligence artificielle est l'avenir, pas seulement pour la Russie, mais pour toute l'humanité.",
+                author: "Vladimir Poutine"
+            }, 
+            {
+                text: "La technologie n'est rien. Ce qui est important, c'est que vous ayez foi en les gens.",
+                author: "Steve Jobs"
+            }, 
+            {
+                text: "Je n'ai pas échoué. J'ai simplement trouvé 10 000 solutions qui ne fonctionnent pas.",
+                author: "Thomas Edison"
+            }, 
+            {
+                text: "Le code, c'est comme l'humour. Quand vous devez l'expliquer, c'est qu'il est mauvais.",
+                author: "Cory House"
+            }, 
+            {
+                text: "Les ordinateurs sont incroyablement rapides, précis et stupides. Les humains sont incroyablement lents, imprécis et brillants. Ensemble, ils sont puissants au-delà de l'imagination.",
                 author: "Albert Einstein"
-            }, {
-                text: "On ne commande la nature qu'en lui obéissant.",
-                author: "Francis Bacon"
-            }, {
-                text: "Le respect de l'environnement est la première étape vers le respect de soi.",
-                author: "Philippe Saint-Marc"
-            }, {
-                text: "L’écologie, c’est l’art de vivre en harmonie avec la Terre.",
-                author: "Pierre Rabhi"
-            }, {
-                text: "Si tu veux comprendre le monde, contemple-le sans vouloir le posséder.",
-                author: "Lao Tseu"
-            }, {
-                text: "Protéger l’environnement, ce n’est pas un luxe, c’est une nécessité vitale.",
-                author: "Wangari Maathai"
-            }, {
-                text: "Celui qui plante des arbres aime les autres en plus de lui-même.",
-                author: "Thomas Fuller"
+            }, 
+            {
+                text: "La mesure du progrès technologique n'est pas seulement ce que nous pouvons créer, mais comment nous l'utilisons pour améliorer l'humanité.",
+                author: "Shuri (Black Panther)"
+            }, 
+            {
+                text: "Dans le futur, l'ordinateur personnel sera un assistant personnel qui comprendra vos besoins et vos habitudes.",
+                author: "Satya Nadella"
+            }, 
+            {
+                text: "La réalité, c'est ce qui refuse de disparaître quand vous cessez d'y croire.",
+                author: "Philip K. Dick"
+            },
+            {
+                text: "Je suis Iron Man. Le savant et l'armure ne font qu'un.",
+                author: "Tony Stark"
+            },
+            {
+                text: "La technologie devrait fonctionner pour vous, pas l'inverse.",
+                author: "Tim Cook"
+            },
+            {
+                text: "Nous créons l'avenir avec chaque ligne de code que nous écrivons.",
+                author: "Mark Zuckerberg"
+            },
+            {
+                text: "L'avenir appartient à ceux qui croient en la beauté de leurs rêves technologiques.",
+                author: "Eleanor Roosevelt (adapté)"
             }
-
         ];
-
         // Fonction pour obtenir une citation aléatoire
         function getRandomQuote() {
             const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -530,3 +560,4 @@
 
 
 </html>
+
